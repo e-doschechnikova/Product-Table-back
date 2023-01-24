@@ -2,7 +2,7 @@ const express = require('express');
 const {v1: uuidv1} = require('uuid');
 const bodyParser = require('body-parser')
 const app = express();
-const port = 3000
+const port = 3010
 const jsonParser = bodyParser.json()
 
 let documents1 = [
@@ -127,5 +127,5 @@ app.get("/clear", (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log('Server started on port 3000');
+    console.log('Server started on port ', port);
 });
